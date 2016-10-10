@@ -7,53 +7,50 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css"/>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.min.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
 <body>
 
-    <div class="page-header">
-        <span>Екскурсії Києвом</span>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="images/bannerman.jpg" class="img-responsive img-thumbnail">
-            <img src="images/street.jpg" class="img-responsive img-thumbnail">
-            <img src="images/dom1.jpg" class="img-responsive img-thumbnail">
-        </div>
-        <div class="col-sm-6">
-            <p>
-                Эту схему называют «Рембрандтовский свет». Описание «Рембрандтовского света» мы можем встретить в
-                интернете. Я хочу рассказать об этой схеме со своей точки зрения, показать ее плюсы и минусы, провести
-                параллели между живописью и фотографией.
-                Но почему именно Рембрандт — мастер светописи? Изучая иллюстрации и живописные полотна можно увидеть,
-                что теневая сторона на работах Рембрандта более прозрачна и читаема, детали и текстуры узнаваемы. В этом
-                его мастерство — детальная прорисовка как света, так и теней.
-                Итак, рисующий свет падает на объект под углом в 45 градусов, камера находится относительно источника
-                света тоже под углом в 45 градусов (я не считаю, что надо строго придерживаться этого угла, лица и
-                образы имеют разные формы, поэтому небольшие отклонения допустимы).
-                Рефлектор». Именно при таком расположении рисующего источника, предмет расскажет о своей форме и объеме
-                максимально. Это произойдет потому, что мы сможем «остро» проследить за светотенью. Пример показан на
-                самом простом предмете-шаре.
-                Очень хорошо начинать учиться ставить свет именно с этой схемы. Она с одной стороны проста и понимаема,
-                с другой стороны требует внимательности в настройках и параметрах света. Модель, позируя в таком свете
-                должна понимать задачи, которые ставит перед ней фотограф.
-            </p>
-        </div>
-        <div class="col-sm-3">
-            <img src="images/bannerman.jpg" class="img-responsive img-thumbnail">
-            <img src="images/street.jpg" class="img-responsive img-thumbnail">
-            <img src="images/dom1.jpg" class="img-responsive img-thumbnail">
+<section class="page-header">
+    <!--<p>Екскурсії Києвом</p>-->
+    <div><img class="center-block" id="header" src="images/kiev-excursions.jpg"></div>
+    <div class=" text-right">
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Головна</button>
+            <button type="button" class="btn btn-default">Рубрики</button>
+            <button type="button" class="btn btn-default">Проекти</button>
+            <button type="button" class="btn btn-default">Наші партнери</button>
+            <button type="button" class="btn btn-default">Блог Київ</button>
+            <button type="button" class="btn btn-default">Відео</button>
         </div>
     </div>
 
+</section>
 
-    <div class="page-footer">
-        <span>footer</span>
+<div class="row">
+    <div class="col-sm-3">
+        <img src="images/bannerman.jpg" class="img-responsive img-thumbnail">
+        <img src="images/street.jpg" class="img-responsive img-thumbnail">
+        <img src="images/dom1.jpg" class="img-responsive img-thumbnail">
     </div>
+    <div class="col-sm-6 content">
+        {{ content }}
+    </div>
+    <div class="col-sm-3">
+        <img src="images/street.jpg" class="img-responsive img-thumbnail">
+        <img src="images/dom1.jpg" class="img-responsive img-thumbnail">
+        <img src="images/bannerman.jpg" class="img-responsive img-thumbnail">
+    </div>
+</div>
 
+
+<div class="page-footer">
+    <span>(c) 2016</span>
+</div>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
