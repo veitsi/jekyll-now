@@ -3,4 +3,6 @@ body {
 }
 .page-header, .page-footer{
     background-color: #331100;
+    margin-top:0;
+    margin-bottom:0;
 }
